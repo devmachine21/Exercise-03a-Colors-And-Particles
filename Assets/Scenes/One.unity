@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -139,6 +138,8 @@ GameObject:
   - component: {fileID: 68157376}
   - component: {fileID: 68157378}
   - component: {fileID: 68157377}
+  - component: {fileID: 68157380}
+  - component: {fileID: 68157379}
   m_Layer: 0
   m_Name: Top Wall
   m_TagString: Untagged
@@ -258,6 +259,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &68157379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68157375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: e6cc6d34ba0bc214095195084ebd92fd, type: 2}
+--- !u!114 &68157380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68157375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!4 &137548806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
@@ -405,6 +437,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.5199995
@@ -445,6 +493,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -461,6 +537,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -502,6 +586,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -529,6 +633,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.1
@@ -568,6 +680,26 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -591,6 +723,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.1
@@ -631,6 +771,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -647,6 +791,22 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,6 +848,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -709,6 +897,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -750,6 +946,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -771,6 +971,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -812,6 +1020,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -828,6 +1064,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -869,6 +1113,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -895,6 +1159,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -936,6 +1208,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -952,6 +1244,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -992,6 +1292,26 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1107,6 +1427,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4699998
@@ -1147,6 +1475,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1168,6 +1524,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1209,6 +1573,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1225,6 +1617,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1266,6 +1666,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1282,6 +1686,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1322,6 +1734,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1416,8 +1856,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Blocks: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a12f7ee20ca9359428cd6e8a6d32da8c, type: 2}
+  m_sharedMaterial: {fileID: 4265539008704705885, guid: a12f7ee20ca9359428cd6e8a6d32da8c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1522,6 +1962,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.919999
@@ -1562,6 +2018,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1583,6 +2067,22 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1624,6 +2124,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1645,6 +2173,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1686,6 +2222,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1702,6 +2266,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1743,6 +2315,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1764,6 +2340,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1805,6 +2389,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1821,6 +2409,8 @@ GameObject:
   - component: {fileID: 918601064}
   - component: {fileID: 918601066}
   - component: {fileID: 918601065}
+  - component: {fileID: 918601068}
+  - component: {fileID: 918601067}
   m_Layer: 0
   m_Name: Right Wall
   m_TagString: Untagged
@@ -1940,6 +2530,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &918601067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918601063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: e6cc6d34ba0bc214095195084ebd92fd, type: 2}
+--- !u!114 &918601068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918601063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &922408177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1951,6 +2572,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1991,6 +2620,26 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2099,8 +2748,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SCORE: 000000000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a12f7ee20ca9359428cd6e8a6d32da8c, type: 2}
+  m_sharedMaterial: {fileID: 4265539008704705885, guid: a12f7ee20ca9359428cd6e8a6d32da8c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2295,6 +2944,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.1
@@ -2335,6 +3000,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2351,6 +3044,8 @@ GameObject:
   - component: {fileID: 1029065455}
   - component: {fileID: 1029065457}
   - component: {fileID: 1029065456}
+  - component: {fileID: 1029065459}
+  - component: {fileID: 1029065458}
   m_Layer: 0
   m_Name: Left Wall
   m_TagString: Untagged
@@ -2470,6 +3165,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1029065458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029065454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: e6cc6d34ba0bc214095195084ebd92fd, type: 2}
+--- !u!114 &1029065459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029065454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &1060026689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,6 +3311,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.3
@@ -2625,6 +3367,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2661,6 +3431,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2701,6 +3479,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2841,15 +3647,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Lives: 3'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a12f7ee20ca9359428cd6e8a6d32da8c, type: 2}
+  m_sharedMaterial: {fileID: 4265539008704705885, guid: a12f7ee20ca9359428cd6e8a6d32da8c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288610208
+  m_fontColor: {r: 0.62755334, g: 1, b: 0.6179246, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2971,6 +3777,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7
@@ -3011,6 +3825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3027,6 +3845,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3068,6 +3894,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3084,6 +3938,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3125,6 +3987,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3161,6 +4043,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3202,6 +4092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3218,6 +4112,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3259,6 +4161,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3275,6 +4205,22 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3315,6 +4261,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3333,6 +4307,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0699999
@@ -3372,6 +4354,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3404,6 +4414,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3445,6 +4463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3476,6 +4498,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3517,6 +4547,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3543,6 +4601,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3583,6 +4649,26 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3733,6 +4819,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7
@@ -3773,11 +4875,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+--- !u!1 &1717244005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717244006}
+  m_Layer: 0
+  m_Name: Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717244006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717244005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2108869023}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1751378224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
@@ -3787,6 +4948,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
   m_PrefabInstance: {fileID: 1782619109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1758586389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3418284614095794301, guid: 94be2f8010aaaf84d97a9ce94be2c0d1, type: 3}
+  m_PrefabInstance: {fileID: 6526775473133394293}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1782435689
 PrefabInstance:
@@ -3799,6 +4965,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3840,6 +5014,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3856,6 +5058,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3897,6 +5107,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3913,6 +5143,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3953,6 +5191,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3971,6 +5237,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028185983125751078, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028185983125751078, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028185983125751078, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028185983125751078, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028185983125751078, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.27
@@ -4010,6 +5308,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4076,6 +5402,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.719999
@@ -4116,6 +5450,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4137,6 +5475,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4178,6 +5524,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4194,6 +5560,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4235,6 +5609,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4251,6 +5645,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4291,6 +5693,10 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4314,6 +5720,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakoutBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.13
@@ -4354,6 +5768,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4370,6 +5788,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8c705bb19ae117408d2ab47b5c835f1, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4410,6 +5836,34 @@ PrefabInstance:
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4437,6 +5891,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92c7c5412408b8e4094bff21c2c0bd4e, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4478,11 +5940,107 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+--- !u!1 &2108869020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108869023}
+  - component: {fileID: 2108869022}
+  - component: {fileID: 2108869021}
+  m_Layer: 0
+  m_Name: ExplosionReplicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2108869021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108869020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 98cae8531794a09499e8fc1911f6af62, type: 2}
+--- !u!114 &2108869022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108869020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"ReplicatedObject","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"PreloadedAmount","value":{"$content":5,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"MaxAmount","value":{"$content":15,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"activeObjects","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"inactiveObjects","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"poolLocation","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 1717244005}
+--- !u!4 &2108869023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108869020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7558492, y: 0.27424198, z: 0.029720236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1717244006}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2110524715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4494,6 +6052,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f9d2f94cc5633e47b6df68b6f1a03c5, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4535,6 +6101,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4551,6 +6121,22 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4592,6 +6178,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4613,6 +6227,14 @@ PrefabInstance:
     - target: {fileID: 1110517035827735320, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_Name
       value: BreakoutBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5035d8660f8bf6549bc4dc462560b25b, type: 3}
+    - target: {fileID: 4635257568770362826, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6134185372281058416, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4654,6 +6276,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992791203241909481, guid: 47699b366ef5cb24ba6553df86c3627f, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4667,6 +6317,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4390248623075474704, guid: 94be2f8010aaaf84d97a9ce94be2c0d1, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"initialSpeed","value":{"$content":10.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"spriteVisual","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390248623075474704, guid: 94be2f8010aaaf84d97a9ce94be2c0d1, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390248623075474704, guid: 94be2f8010aaaf84d97a9ce94be2c0d1, type: 3}
+      propertyPath: _data._objectReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 1758586389}
     - target: {fileID: 4650596125386521317, guid: 94be2f8010aaaf84d97a9ce94be2c0d1, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -4724,6 +6388,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4329486684455147889, guid: 3139d05964691f74fb84c5015bced1fb, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329486684455147889, guid: 3139d05964691f74fb84c5015bced1fb, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6949215337845383903, guid: 3139d05964691f74fb84c5015bced1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4787,3 +6459,4 @@ SceneRoots:
   - {fileID: 1246850687}
   - {fileID: 139190406}
   - {fileID: 1060026690}
+  - {fileID: 2108869023}
