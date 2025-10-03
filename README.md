@@ -2,8 +2,7 @@
 
 Exercise for MSCH-C220
 
-The first steps in adding "juicy" features to a simple brick-breaker game.
-
+The third installment, adding music, sound effects, and a few more "juicy" features to a simple brick-breaker game.
 ## To play
 
 Move the paddle using A and D. Help the ball break all the bricks.
